@@ -1,0 +1,19 @@
+<div class="bienvenida">
+  <app-header></app-header>
+  
+  <h1>Catálogo de productos</h1>
+
+  <section class="productos-grid">
+    @for (producto of productos; track producto.id) {
+    <app-producto-card [producto]="producto" (agregar)="agregarAlCarrito($event)">
+    </app-producto-card>
+    }
+  </section>
+
+  <app-footer></app-footer>
+  <!-- <h1>{{title()}}</h1>
+  <p>Mi primera app en Angular</p>
+  <p>{{autor}}</p> -->
+
+  <!-- <app-saludo></app-saludo> -->
+</div>

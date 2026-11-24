@@ -1,0 +1,55 @@
+.card {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+card:hover {
+    transform: translate(-3px);
+}
+
+.emoji {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+}
+
+.categoria {
+    font-size: 1rem;
+    color: var(--color-texto-suave);
+}
+
+.precio {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--color-primario);
+    margin: 0;
+}
+
+.stock {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: auto;
+}
+
+:host {
+    display: block;
+}
+
+.boton {
+    background: var(--color-primario);
+}
